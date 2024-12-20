@@ -1,46 +1,50 @@
 function Home() {
+
   const productos = [
     {
       id: 1,
-      nombre: "Chaqueta Aguayo Exclusiva",
-      descripcion:
-        "Una chaqueta moderna con detalles de aguayo tradicional, perfecta para cualquier ocasión.",
-      precio: "120 Bs.",
-      imagen: "/images/uno.webp",
+      nombre: "Chevrolet Blazer 2023",
+      descripcion: "SUV moderna con diseño deportivo, tecnología avanzada y alto rendimiento.",
+      precio: "38,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
     },
     {
       id: 2,
-      nombre: "Bolso Aguayo Artesanal",
-      descripcion:
-        "Bolso práctico y resistente con un diseño único inspirado en los Andes.",
-      precio: "80 Bs.",
-      imagen: "/images/dos.webp",    },
+      nombre: "Chevrolet Onix 2023",
+      descripcion: "Sedán compacto con conectividad inteligente y gran eficiencia de combustible.",
+      precio: "18,500 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
     {
       id: 3,
-      nombre: "Sombrero Andino de Aguayo",
-      descripcion: "Combina tradición y moda con este sombrero único.",
-      precio: "100 Bs.",
-      imagen: "/images/tres.webp",    },
+      nombre: "Chevrolet Colorado 2023",
+      descripcion: "Camioneta robusta para trabajos pesados y aventuras off-road.",
+      precio: "35,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
     {
       id: 4,
-      nombre: "Bufanda Multicolor",
-      descripcion: "Bufanda tejida a mano con patrones de aguayo vibrantes.",
-      precio: "60 Bs.",
-      imagen: "/images/cuatro.webp",    },
+      nombre: "Chevrolet Spark 2023",
+      descripcion: "Auto compacto ideal para la ciudad, con diseño atractivo y gran eficiencia.",
+      precio: "12,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
     {
       id: 5,
-      nombre: "Polera Aguayo Edition",
-      descripcion: "Polera cómodos con un toque de estilo boliviano.",
-      precio: "150 Bs.",
-      imagen: "/images/cinco.webp",    },
+      nombre: "Chevrolet Tahoe 2023",
+      descripcion: "SUV de lujo con amplio espacio interior y gran capacidad de remolque.",
+      precio: "55,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
     {
       id: 6,
-      nombre: "Polera Aguayo ",
-      descripcion: "Polera cómodos con un toque de estilo boliviano.",
-      precio: "140 Bs.",
-      imagen: "/images/seis.webp",    },
+      nombre: "Chevrolet Camaro 2023",
+      descripcion: "Deportivo icónico con diseño audaz y desempeño excepcional.",
+      precio: "45,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
   ];
-
+  
   return (
     <main className="">
       {/* Banner */}
@@ -50,14 +54,14 @@ function Home() {
   
         <div className="relative z-10 text-center">
           <h1 className="text-5xl font-bold drop-shadow-md">
-            Viste con Estilo y Tradición
+            Conduce con Estilo y Seguridad
           </h1>
           <p className="mt-4 text-lg max-w-2xl  font-medium">
-            Descubre nuestra colección de prendas únicas con detalles de aguayo,
-            hechas con amor y dedicación a nuestras raíces.
+            Descubre nuestra colección de autos únicas con detalles de ultima tecnologia,
+            hechas con seguridad y confort.
           </p>
           <button className="mt-8 px-4 py-2 bg-white text-rose-700 font-semibold rounded-full shadow-lg hover:bg-gray-200">
-            Ver Tienda
+            Ver autos
           </button>
         </div>
       </section>
@@ -69,8 +73,7 @@ function Home() {
             Descubre Nuestra Colección
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Cada prenda está diseñada para combinar la moda moderna con la rica
-            herencia cultural boliviana. ¡Encuentra tu estilo ideal!
+            Cada auto está diseñada para combinar la moda moderna con tecnologia de ultima ¡Encuentra tu estilo ideal!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {productos.map((producto) => (

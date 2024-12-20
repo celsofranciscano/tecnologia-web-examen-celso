@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'fondo': "url('/fondo.webp')",
+        'fondo': "url('/auto.jpg')",
       
       }
     },

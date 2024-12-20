@@ -3,3 +3,21 @@
 @tailwind utilities;
 
 
+@layer components {
+    .input-dark {
+      @apply py-2
+      text-black
+      dark:text-white
+          bg-white
+          rounded-md
+          px-4
+          dark:bg-zinc-950
+          border
+          dark:border-zinc-800
+          focus:outline-none
+          focus-visible:ring-1
+          focus-visible:ring-zinc-500
+          focus-visible:border-none
+          placeholder:text-zinc-500;
+    }
+  }

@@ -12,3 +12,67 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+
+model tbroles {
+  PK_role   Int       @id @default(autoincrement())
+  role      String    @unique @db.VarChar(50)
+  status    Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime?
+  tbusers   tbusers[]
+}
+
+model tbusers {
+  PK_user       Int             @id @default(autoincrement())
+  FK_role       Int 
+  CI            String          @unique @db.VarChar(20)
+  firstName     String          @db.VarChar(80)
+  lastName      String          @db.VarChar(80)
+  email         String          @unique @db.VarChar(255)
+  password      String          @db.VarChar(255)
+  profileImage  String?         @db.VarChar(255)
+  status        Boolean         @default(true)
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime?
+  tbroles       tbroles         @relation(fields: [FK_role], references: [PK_role])
+}
+
+model tbdepartaments {
+  PK_department   Int       @id @default(autoincrement())
+  department      String    @unique @db.VarChar(50)
+  status          Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime?
+  tbemployees     tbemployees[]
+}
+
+model tbemployees {
+  PK_employee      Int             @id @default(autoincrement())
+  FK_department    Int
+  firstName        String          @db.VarChar(80)
+  lastName         String          @db.VarChar(80)
+  email            String          @unique @db.VarChar(255)
+  phone            Int
+  address          String?         @db.VarChar(255)
+  observations     String?         @db.VarChar(255)
+  birthDate        DateTime
+  salary           Int
+  status           Boolean         @default(true)
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime?
+  tbdepartaments   tbdepartaments  @relation(fields: [FK_department], references: [PK_department])
+}
+
+model tbcarsales {
+  PK_sale          Int             @id @default(autoincrement())
+  carModel         String          @db.VarChar(100)
+  carBrand         String          @db.VarChar(100)
+  image         String          @db.VarChar(255)
+  description         String          @db.VarChar(255)
+  year             Int
+  price            Float
+  status           Boolean         @default(true)
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime?
+}

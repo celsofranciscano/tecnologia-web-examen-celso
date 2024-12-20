@@ -2,20 +2,51 @@
 
 import Link from "next/link";
 function TiendaPage() {
-    const productos = [
-      { id: 1, nombre: "Chaqueta Aguayo Exclusiva", descripcion: "Una chaqueta moderna con detalles de aguayo tradicional, perfecta para cualquier ocasión.", precio: "120 Bs.", imagen: "/images/uno.webp" },
-      { id: 2, nombre: "Bolso Aguayo Artesanal", descripcion: "Bolso práctico y resistente con un diseño único inspirado en los Andes.", precio: "80 Bs.", imagen: "/images/dos.webp" },
-      { id: 3, nombre: "Sombrero Andino de Aguayo", descripcion: "Combina tradición y moda con este sombrero único.", precio: "100 Bs.", imagen: "/images/tres.webp" },
-      { id: 4, nombre: "Bufanda Multicolor", descripcion: "Bufanda tejida a mano con patrones de aguayo vibrantes.", precio: "60 Bs.", imagen: "/images/cuatro.webp" },
-      { id: 5, nombre: "Zapatos Aguayo Edition", descripcion: "Zapatos cómodos con un toque de estilo boliviano.", precio: "150 Bs.", imagen: "/images/cinco.webp" },
-      { id: 6, nombre: "Suéter de Lana Andina", descripcion: "Suéter de lana de alpaca con detalles de aguayo, ideal para el clima frío.", precio: "180 Bs.", imagen: "/images/seis.webp" },
-      { id: 7, nombre: "Pantalón de Tela de Aguayo", descripcion: "Pantalón de tela ligera con detalles de aguayo, cómodo y moderno.", precio: "90 Bs.", imagen: "/images/siete.webp" },
-      { id: 8, nombre: "Falda Tradicional Andina", descripcion: "Falda larga con bordado de aguayo, perfecta para ocasiones especiales.", precio: "140 Bs.", imagen: "/images/ocho.webp" },
-      { id: 9, nombre: "Chaleco de Aguayo", descripcion: "Chaleco hecho a mano con detalles de aguayo, elegante y único.", precio: "110 Bs.", imagen: "/images/nueve.webp" },
-      { id: 10, nombre: "Mochila de Cuero y Aguayo", descripcion: "Mochila resistente y de diseño único, perfecta para el día a día.", precio: "130 Bs.", imagen: "/images/diez.webp" },
-      { id: 11, nombre: "Guantes de Lana Andina", descripcion: "Guantes tejidos a mano con lana andina, perfectos para el invierno.", precio: "50 Bs.", imagen: "/images/once.webp" },
-      { id: 12, nombre: "Poncho Andino de Aguayo", descripcion: "Poncho de lana con detalles de aguayo, elegante y cálido.", precio: "160 Bs.", imagen: "/images/doce.webp" }
-    ];
+  const productos = [
+    {
+      id: 1,
+      nombre: "Chevrolet Blazer 2023",
+      descripcion: "SUV moderna con diseño deportivo, tecnología avanzada y alto rendimiento.",
+      precio: "38,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
+    {
+      id: 2,
+      nombre: "Chevrolet Onix 2023",
+      descripcion: "Sedán compacto con conectividad inteligente y gran eficiencia de combustible.",
+      precio: "18,500 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
+    {
+      id: 3,
+      nombre: "Chevrolet Colorado 2023",
+      descripcion: "Camioneta robusta para trabajos pesados y aventuras off-road.",
+      precio: "35,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
+    {
+      id: 4,
+      nombre: "Chevrolet Spark 2023",
+      descripcion: "Auto compacto ideal para la ciudad, con diseño atractivo y gran eficiencia.",
+      precio: "12,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
+    {
+      id: 5,
+      nombre: "Chevrolet Tahoe 2023",
+      descripcion: "SUV de lujo con amplio espacio interior y gran capacidad de remolque.",
+      precio: "55,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
+    {
+      id: 6,
+      nombre: "Chevrolet Camaro 2023",
+      descripcion: "Deportivo icónico con diseño audaz y desempeño excepcional.",
+      precio: "45,000 USD",
+      imagen: "https://imcruz-bolivia.s3.amazonaws.com/images/contents/2023-11-17-chevrolet_BLAZER_home_1000x1000.jpg?2023-11-17%2014:39:58",
+    },
+  ];
+  
   
     return (
       <main className="">
